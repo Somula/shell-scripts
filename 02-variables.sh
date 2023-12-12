@@ -1,11 +1,11 @@
 #!/bin/bash
 
-DATE="$(date) 
+DATE=$(date) 
 
 PERSON1=RAMESH
 PERSON2=SURESH
 
-echo "script updated timestamp: ${DATE}"
+echo "script started executing: ${DATE}"
 
 echo "$PERSON1: Hello $PERSON2, Good Morning"
 echo "$PERSON2: Hello $PERSON1, Good Morning"
