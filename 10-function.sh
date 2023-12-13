@@ -12,6 +12,7 @@ VALIDATE(){
         echo "ERROR:Inastalling was failed. Please try again"
     else
         echo "Successfully installed"
+    fi
 }
 yum install $ package1 -y
 VALIDATE
