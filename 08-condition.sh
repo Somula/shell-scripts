@@ -13,7 +13,7 @@ VAR1=WORLD
 
 DATE=$(date)
 
-echo "script started on: ${DATE}"
+echo "script started on: $DATE"
 
 echo "$VAR $VAR1"
 
