@@ -1,29 +1,14 @@
 #!/bin/bash
 
-echo "Enter username"
-
-read -s username
-
-echo "Enter password"
-
-read -s password
-
-VAR=Hello
-VAR1=WORLD
 
 DATE=$(date)
 
 echo "script started on: $DATE"
 
-echo "$VAR $VAR1"
+num=$1
 
-num1=$1
-num2=$2
-
-add=$((num1+num2))
-
-echo "addition of two num: $add"
-
-arr=("1" "2" "3" "4" "5" "6")
-
-echo "0 index of arr is ${arr[@]}"
+if [ num -gt 10 ]
+then 
+    echo "Given number is greater than 10."
+else
+    echo "Given number is less than 10."
