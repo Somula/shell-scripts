@@ -1,5 +1,6 @@
 #!/bin/bash
 
-VAR=HelloWORLD
+VAR=Hello
+VAR1=WORLD
 
-echo "$VAR"
+echo "$VAR $VAR1"
