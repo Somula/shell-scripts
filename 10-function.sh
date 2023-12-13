@@ -14,7 +14,7 @@ VALIDATE(){
         echo "Successfully installed"
     fi
 }
-yum install $ package1 -y
+yum install $package1 -y
 VALIDATE
-yum install $ package2 -y
+yum install $package2 -y
 VALIDATE
