@@ -12,14 +12,12 @@ fi
 
 yum install nginx -y
 
-systemctl enable nginx
+if [ $? -ne 0 ]
+then 
+    echo "ERROR: Installing mysql is failed"
+else
+    echo "Successfully installed mysql"
+fi
 
-systemctl start nginx
 
-rm -rf /usr/share/nginx/html/*
 
-cd /usr/share/nginx/html
-
-curl -o /tmp/web.zip https://roboshop-builds.s3.amazonaws.com/web.zip
-
-unzip /tmp/web.zip
