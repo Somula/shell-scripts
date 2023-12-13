@@ -23,3 +23,7 @@ num2=$2
 add=$((num1+num2))
 
 echo "addition of two num: $add"
+
+arr=("1" "2" "3" "4" "5" "6")
+
+echo "o index of arr is $arr[0]"
