@@ -8,3 +8,5 @@ then
 else
     echo "Successfully your logged in as root user"
 fi
+
+yum install nginx -y
