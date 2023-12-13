@@ -7,7 +7,7 @@ echo "script started on: $DATE"
 
 num=$1
 
-if [ num -gt 10 ]
+if [ $num -gt 10 ]
 then 
     echo "Given number is greater than 10."
 else
