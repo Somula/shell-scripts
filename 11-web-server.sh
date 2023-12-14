@@ -32,7 +32,7 @@ yum list installed nginx
     if [ $? -eq 0 ]
     then
         echo -e "$G Successfully installed nginx $N"
-        exit 1
+        
     else
         yum install nginx -y &>> $LOGFILE
         VALIDATE $? "Installed nginx"
