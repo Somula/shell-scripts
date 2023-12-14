@@ -15,3 +15,9 @@ else
     echo -e " $G Success $N your root user"
 fi
 
+for i in {1..1000}
+do
+    echo $i 
+done
+
+
