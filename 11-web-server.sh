@@ -11,10 +11,10 @@ N="\e[0m"
 VALIDATE(){
     if( $1 -ne 0 )
     then
-        echo "$2 is $R failed. $N"
+        echo -e "$2 is $R failed. $N"
         exit 1
     else
-        echo "$2 is $G Success. $N"
+        echo -e "$2 is $G Success. $N"
     fi
 }
 
@@ -54,7 +54,7 @@ unzip /tmp/web.zip
 
 VALIDATE $? "unzip the file"
 
-cp /home/devops/repo/shell-scripts/roboshop.conf /etc/nginx/default.d/roboshop.conf
+cp /devops/repo/shell-scripts/roboshop.conf /etc/nginx/default.d/roboshop.conf
 
 VALIDATE $? "created a roboshop.conf file"
 
