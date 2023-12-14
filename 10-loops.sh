@@ -2,7 +2,7 @@
 
 ID=$(id -u)
 TIMESTAMP=$(date +%F-%H-%M-%S)
-R="\O33[O;31m"
+R="\e[31m]
 G="\O33[O;32m"
 Y="\O33[O;33m"
 N="\O33[O;0m"
