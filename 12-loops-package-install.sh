@@ -24,7 +24,7 @@ do
         echo -e "$package is installed already so $Y SKIPPING the package.$N"
     else
         yum install $package -y &>> $LOGFILE
-        VALIDATED $? "Installing $package"
+        VALIDATE $? "Installing $package"
     fi
 done
 
