@@ -2,10 +2,10 @@
 
 ID=$(id -u)
 TIMESTAMP=$(date +%F-%H-%M-%S)
-R="\e[0;31m"
-G="\e[0;32m"
-Y="\e[0;33m"
-N="\e[0m"
+R="\O33[O;31m"
+G="\O33[O;32m"
+Y="\O33[O;33m"
+N="\O33[O;0m"
 
 if [ $ID -ne 0 ]
 then
