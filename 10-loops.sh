@@ -10,8 +10,8 @@ N="\e[0m"
 
 if [ $ID -ne 0 ]
 then
-    echo " $R ERROR:: $N Switch to root user  "
+    echo -e " $R ERROR:: $N Switch to root user  "
 else
-    echo " $G Success $N your root user"
+    echo -e " $G Success $N your root user"
 fi
 
