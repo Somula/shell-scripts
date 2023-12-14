@@ -28,9 +28,16 @@ else
     echo -e "$G Successfully logged in as root user $N"
 fi
 
-yum install nginx -y &>> $LOGFILE
+yum list installed nginx
+    if [ $? -eq 0 ]
+    then
+        echo -e "$G Successfully installed nginx $N"
+        exit 1
+    else
+        yum install nginx -y &>> $LOGFILE
+        VALIDATE $? "Installed nginx"
+    fi
 
-VALIDATE $? "Installing nginx"
 
 systemctl enable nginx &>> $LOGFILE
 
