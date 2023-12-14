@@ -54,7 +54,7 @@ unzip /tmp/web.zip
 
 VALIDATE $? "unzip the file"
 
-cp /devops/repo/shell-scripts/roboshop.conf /etc/nginx/default.d/roboshop.conf
+cp /home/centos/shell-scripts/roboshop.conf /etc/nginx/default.d/roboshop.conf
 
 VALIDATE $? "created a roboshop.conf file"
 
