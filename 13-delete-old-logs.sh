@@ -15,7 +15,7 @@ then
     echo -e "$R Source directory does not exist.$N"
 fi
 
-while IFS=read -r line
+while IFS= read -r line
 do
     echo "Deleting file: $line"
 
