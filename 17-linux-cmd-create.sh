@@ -26,5 +26,5 @@ then
     exit 1
 fi
 
-echo "Hello $Name $WISHES. Thanking You for Invitation."
+echo "Hello $NAME $WISHES. Thanking You for Invitation."
 
