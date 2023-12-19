@@ -33,7 +33,7 @@ do
             ,"Type"             : "A"
             ,"TTL"              : 1
             ,"ResourceRecords"  : [{
-                "Value"         : "$PrivateIpAddress"
+                "Value"         : "'$PrivateIpAddress'"
             }]
         }
         }]
