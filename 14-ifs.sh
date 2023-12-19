@@ -18,7 +18,6 @@ do
     echo "user_id: $user_id"
     echo "group_id: $group_id"
     echo "user_id_info: $user_id_info"
-    echo "group_id_info: $group_id_info"
     echo "home_directory: $home_directory"
     echo "command/shell: $command_shell"
 done < $file
