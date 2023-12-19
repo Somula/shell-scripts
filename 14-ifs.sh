@@ -11,7 +11,7 @@ then
     echo -e "$RFile doesn't exist.$N"
 fi
 
-while IFS= read -r username password user_id group_id user_id_info home_directory command_shell
+while IFS=":" read -r username password user_id group_id user_id_info home_directory command_shell
 do
     echo "username: $username"
     echo "password: $password"
