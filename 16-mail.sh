@@ -5,6 +5,8 @@ ALERT=$2
 BODY=$3
 TO_ADDRESS=$4
 SUBJECT=$5
+ESCAPE_BODY=$(printf '%s\n' "$BODY" | sed -e 's/[]\/$*.^[]/\\&/g');
+
 
 FINAL_BODY=$(sed -e "s/TO_TEAM/$TO_TEAM/g" -e "s/ALERT/$ALERT/g" -e "s/BODY/$BODY/g" template.html)
 
