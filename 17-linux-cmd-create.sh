@@ -3,7 +3,7 @@
 NAME=""
 WISHES="Good Morning"
 USAGE(){
-    echo "USAGE: $(basename "$0) -n <name> -w<whishes>"
+    echo "USAGE: $(basename $0) -n <name> -w<whishes>"
     echo "options::"
     echo " -n, Specify the name (mandatory)"
     echo " -w, Specify the wishes (optional)"
