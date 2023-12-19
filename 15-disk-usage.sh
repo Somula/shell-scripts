@@ -14,7 +14,7 @@ do
     partion=$(echo $line | awk '{print $1F}')
     if [ $USAGE -ge $DISK_THRESHOLD ]
     then
-        message+="Higher disk usage on $partion: $USAGE.\n"
+        message+="Higher disk usage on $partion: $USAGE.<br>"
     fi
 
 done <<< $DISK_USAGE
