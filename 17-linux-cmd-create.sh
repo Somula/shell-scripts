@@ -19,7 +19,12 @@ while getopts ":n:w:h" opt; do
         h) USAGE; exit 1;;
       esac
     done
-
+if [ -z "$NAME" ];
+then
+    echo "ERROR: -n is mandatory."
+    USAGE
+    exit 1
+fi
 
 echo "Hello $NAME $WISHES. Thanking You for Invitation."
 
