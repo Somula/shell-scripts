@@ -1,14 +1,30 @@
 #!/bin/bash
 
-while getopts ":a:b" opt; do
+NAME=""
+WISHES="Good Morning"
+USAGE(){
+    echo "USAGE: $(basename "$0) -n <name> -w<whishes>"
+    echo "options::"
+    echo " -n, Specify the name (mandatory)"
+    echo " -w, Specify the wishes (optional)"
+    echo " -h, Displays this help and exit"
+}
+
+while getopts ":n:w:h" opt; do
       case $opt in
-        a ) APPLE="$OPTARG";;
-        b ) BANANA="$OPTARG";;
-        \?) echo "Invalid option: -"$OPTARG"" >&2
-            exit 1;;
-        : ) echo "Option -"$OPTARG" requires an argument." >&2
-            exit 1;;
+        n) NAME="$OPTARG";;
+        w) WISHES="$OPTARG";;
+        \?) echo "Invalid option: -"$OPTARG"" >&2; USAGE; exit 1;;
+        :) echo "Option -"$OPTARG" requires an argument." >&2; exit 1;;
+        h) USAGE; exit 1;;
       esac
     done
-echo "Apple is "$APPLE""
-echo "Banana is "$BANANA""
+if [ -z "$NAME" ];
+then
+    echo "ERROR: -n is mandatory."
+    USAGE
+    exit 1
+fi
+
+echo "Hello $Name $WISHES. Thanking You for Invitation."
+
