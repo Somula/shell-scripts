@@ -12,7 +12,7 @@ while IFS= read line
 do
     USAGE=$(echo $line | awk '{print $6F)' | cut -d % -f1)
     partion=$(echo $line | awk '{print $1F}')
-    if [ $USAGE -gt DISK_Threshold ]
+    if [ $USAGE -gt $DISK_Threshold ]
     then
         message+="Higher disk usage on $partion $USAGE.\n"
     fi
