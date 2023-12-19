@@ -4,7 +4,7 @@ R="\e[31m"
 G="\e[32m"
 N="\e[0m"
 
-DISK_USAGE=$(df -hT | ! grep -vE "tmp|File")
+DISK_USAGE=$(df -hT | grep -vE 'tmp|File')
 DISK_Threshold=1
 
 while IFS= read -r line
