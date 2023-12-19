@@ -4,7 +4,7 @@ AMI_ID="ami-03265a0778a880afb"
 SG="sg-0a4b59538c2adbf03"
 INSTANCE=("mongodb" "redis" "mysql" "rabbitmq" "catalogue" "user" "cart" "shipping" "payment" "dispatch" "web")
 zoneid="Z0790319IEVF09XXXVM1"
-DOMAIN_NAME=".lingaaws.tech"
+DOMAIN_NAME="lingaaws.tech"
 
 
 
@@ -29,7 +29,7 @@ do
         ,"Changes": [{
         "Action"              : "CREATE"
         ,"ResourceRecordSet"  : {
-            "Name"              : ""$i""$DOMAIN_NAME""
+            "Name"              : "$i.$DOMAIN_NAME"
             ,"Type"             : "A"
             ,"TTL"              : 1
             ,"ResourceRecords"  : [{
@@ -37,5 +37,6 @@ do
             }]
         }
         }]
-    }'
+    }
+    '
 done
