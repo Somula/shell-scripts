@@ -11,6 +11,6 @@ SUBJECT=$5
 
 FINAL_BODY=$(sed -e "s/TO_TEAM/$TO_TEAM/g" -e "s/ALERT/$ALERT/g" -e "s/BODY/$ESCAPE_BODY/g" template.html)
 
-echo "$Final_BODY" | mail -s "$(echo -e "$SUBJECT\nContent-Type: text/html")" "$TO_ADDRESS"
+echo "$FINAL_BODY" | mail -s "$(echo -e "$SUBJECT\nContent-Type: text/html")" "$TO_ADDRESS"
 
 
